@@ -1,0 +1,10 @@
+node_modules/
+dist/client/
+dist/server/
+dist/.openai/
+.env
+.env.*
+!.env.example
+.wrangler/
+.sites-runtime/
+.knight-local/

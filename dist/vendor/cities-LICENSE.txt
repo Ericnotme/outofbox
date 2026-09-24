@@ -1,0 +1,11 @@
+GeoNames geographical database, cities15000 data snapshot downloaded 2026-09-22.
+Source: https://download.geonames.org/export/dump/cities15000.zip
+Attribution: GeoNames (https://www.geonames.org/)
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+Modified for Knight Room: retained name, ASCII name, Chinese alternate names,
+country, coordinates, population, administrative area code and GeoNames ID;
+rounded coordinates to four decimal places, sorted by population, converted to JSON.
+Array format: [names[], countryCode, latitude, longitude, population, admin1Code, geonameID].
+GeoNames provides this data as-is, without warranty of accuracy or completeness.

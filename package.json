@@ -1,0 +1,16 @@
+{
+  "name": "knight-room",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "db:generate": "drizzle-kit generate",
+    "start": "npm run build && node scripts/dev.mjs"
+  },
+  "devDependencies": {
+    "drizzle-kit": "0.31.4",
+    "drizzle-orm": "0.44.2",
+    "esbuild": "0.28.2"
+  }
+}
