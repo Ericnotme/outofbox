@@ -18,13 +18,14 @@ for(const file of readdirSync(new URL('drizzle/',root)).filter(f=>f.endsWith('.s
   catch(error){db.exec('ROLLBACK');throw error;}
 }
 function query(statement,values=[]){return {
+  execute(){const result=statement.run(...values);return {success:true,meta:{changes:Number(result.changes)}};},
   bind(...args){return query(statement,args);},
   async first(){return statement.get(...values)??null;},
   async all(){return {results:statement.all(...values),success:true};},
   async run(){const result=statement.run(...values);return {success:true,meta:{changes:Number(result.changes)}};}
 };}
-const mime={'.html':'text/html; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json','.wasm':'application/wasm','.svg':'image/svg+xml','.jpeg':'image/jpeg','.txt':'text/plain; charset=utf-8','.gz':'application/gzip'};
-const env={DB:{prepare(sql){return query(db.prepare(sql));}},ASSETS:{async fetch(request){
+const mime={'.html':'text/html; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json','.wasm':'application/wasm','.svg':'image/svg+xml','.jpeg':'image/jpeg','.png':'image/png','.mp4':'video/mp4','.txt':'text/plain; charset=utf-8','.gz':'application/gzip'};
+const env={DB:{prepare(sql){return query(db.prepare(sql));},async batch(statements){db.exec('BEGIN');try{const results=statements.map(s=>s.execute());db.exec('COMMIT');return results;}catch(error){db.exec('ROLLBACK');throw error;}}},ASSETS:{async fetch(request){
   const file=path.resolve(client,'.'+decodeURIComponent(new URL(request.url).pathname));
   if(!file.startsWith(client+path.sep))return new Response('Not found',{status:404});
   try{return new Response(await fs.readFile(file),{headers:{'Content-Type':mime[path.extname(file)]||'application/octet-stream'}});}

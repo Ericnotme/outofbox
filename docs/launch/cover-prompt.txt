@@ -1,0 +1,14 @@
+Use case: ads-marketing
+Asset type: premium social sharing cover for KNIGHT ROOM / 棋间, an online two-player chess experience with a simultaneous post-game reveal of both players' choices at key moments.
+Primary request: create one finished, premium cinematic landscape brand cover, ideally 1920x1024 (roughly 1.91:1), or 1536x1024 landscape.
+Scene/backdrop: deep ink-green fading into almost black. A real chessboard emerges from shadow across the bottom half of the image.
+Subject: precisely two physically realistic sculpted chess knights, one ivory white knight and one black knight, facing each other from opposite sides of the board. Show full silhouettes and bases. A very subtle, elegant thin thread of light connects the space between them, suggesting two minds meeting and a shared reveal.
+Style/medium: sophisticated editorial campaign, photoreal product photography, minimal cinematic composition, premium materials, convincing polished ivory and dark wood or black stone texture. No screens or interface.
+Composition/framing: strong wide composition, spacious upper area for headline, two knight pieces anchored in the lower half, thoughtful symmetry with breathing room. Safe margins all around.
+Lighting/mood: precise studio rim lighting, soft warm gold edge on ivory knight, very restrained luminous cyan accent on black knight; quiet, intelligent, intimate atmosphere.
+Color palette: dark ink-green/black background, warm cream typography, only a little luminous cyan and warm gold.
+Text (verbatim, the only text in the image):
+"KNIGHT ROOM"
+"A game. Two minds. One reveal."
+Typography: very large confident readable cream headline, refined bold modern sans serif with tasteful spacing, tagline smaller but clearly legible directly beneath it. Exact spelling and punctuation.
+Constraints: high quality finished social cover; only two chess knights; no other chess pieces; no fake UI; no Chinese text; no small additional text; no awards; no watermarks; no clutter; no oversized glow; no illegible letters; no borders.

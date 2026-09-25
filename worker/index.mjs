@@ -2,10 +2,12 @@ import {notebookAPI} from './notebook.mjs';
 import {sessionAPI} from './session.mjs';
 import {discoveryAPI} from './discovery.mjs';
 import {jamsAPI} from './jams.mjs';
+import {liveAPI} from './live.mjs';
 import page from '../dist/index.html';
 export default {
   async fetch(request,env){
     const path=new URL(request.url).pathname;
+    if(path==='/api/live')return liveAPI(request,env);
     if(path==='/api/notebook')return notebookAPI(request,env);
     if(path==='/api/session')return sessionAPI(request,env);
     if(path==='/api/jams')return jamsAPI(request,env);
