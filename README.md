@@ -76,6 +76,12 @@ Knight Room is a free, no-signup chess playground: human matchmaking, invite lin
 
 我希望它值得你明天再来一下。这个愿望需要靠真实使用验证，欢迎直说你的感受。
 
+## 自愿支持创作
+
+如果喜欢这些作品，欢迎[自愿支持创作](https://signal-observatory.weijiaxian.chatgpt.site/lab/support/)。完全自愿，感谢你的使用与反馈。
+
+想配着音乐下棋，也可以打开[棋间配乐](https://signal-observatory.weijiaxian.chatgpt.site/lab/?listen=knight-room#music)。
+
 <details>
 <summary>本地运行与实现说明</summary>
 
